@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Weather from "./COMPONENTS/Weather";
+import Weather from "./COMPONENTS/WEATHER/Weather";
+import Footer from "./COMPONENTS/FOOTER/Footer"; // Import the Footer component
 import "./App.css";
 
 const App = () => {
@@ -54,15 +55,15 @@ const App = () => {
   };
 
   const toggleTheme = () => {
-    setTheme(theme === "light" ? "dark" : "light");
+    setTheme(theme === "dark" ? "light" : "dark");
   };
 
   useEffect(() => {
-    document.body.className = theme;
+    document.body.className = theme; // Apply the theme class to the body
   }, [theme]);
 
   return (
-    <div className={`app ${background} ${theme}`}>
+    <div className={`app ${background}`}>
       <h1>Weather App</h1>
       <form onSubmit={handleSearch}>
         <input
@@ -78,6 +79,7 @@ const App = () => {
       </button>
       {error && <p className="error">{error}</p>}
       {weatherData && <Weather data={weatherData} />}
+      <Footer/>
     </div>
   );
 };

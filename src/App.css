@@ -7,14 +7,19 @@ body {
   height: 100vh;
   overflow: hidden;
   transition: background 0.5s ease, color 0.5s ease;
+  position: relative; /* Ensure the footer is positioned relative to the body */
 }
 
+/* Light Mode */
 body.light {
-  color: #000;
+  background: #f5f7fa; /* Light background */
+  color: #000; /* Dark text */
 }
 
+/* Dark Mode */
 body.dark {
-  color: #fff;
+  background: #2c3e50; /* Dark background */
+  color: #000000; /* Light text */
 }
 
 .app {
@@ -145,3 +150,178 @@ button:hover {
     background-position: 100% 100%;
   }
 }
+
+
+
+
+
+
+
+
+
+/*
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  transition: background 0.5s ease, color 0.5s ease;
+}
+
+
+body.light {
+  background: #f5f7fa; 
+  color: #000; 
+}
+
+
+body.dark {
+  background: #2c3e50; 
+  color: #000000; 
+}
+
+.app {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  position: relative;
+  z-index: 1;
+}
+
+input {
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 60%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #007bff;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.theme-toggle {
+  margin-top: 10px;
+  background-color: #28a745;
+}
+
+.weather {
+  margin-top: 20px;
+}
+
+.error {
+  color: red;
+}
+
+.weather img {
+  width: 50px;
+  height: 50px;
+}
+
+
+.default {
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  animation: gradientShift 10s infinite alternate;
+}
+
+.sunny {
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+  animation: sunnyGlow 5s infinite alternate;
+}
+
+.cloudy {
+  background: linear-gradient(135deg, #a1c4fd, #c2e9fb);
+  animation: cloudyMove 10s infinite linear;
+}
+
+.rainy {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  animation: rainFall 5s infinite linear;
+}
+
+.snowy {
+  background: linear-gradient(135deg, #e0eafc, #cfdef3);
+  animation: snowFall 10s infinite linear;
+}
+
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes sunnyGlow {
+  0% {
+    box-shadow: 0 0 20px rgba(255, 200, 0, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 50px rgba(255, 200, 0, 0.8);
+  }
+}
+
+@keyframes cloudyMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes rainFall {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+@keyframes snowFall {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
